@@ -28,8 +28,14 @@ yarn-error.*
 .DS_Store
 *.pem
 
-# local env files
-.env*.local
+# Ignorar todos os arquivos .env
+.env
+.env.*  
+
+# Opcional: Ignorar arquivos do Node.js e do Firebase (caso esteja usando)
+node_modules/
+firebase-debug.log
+
 
 # typescript
 *.tsbuildinfo
